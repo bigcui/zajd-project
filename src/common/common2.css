@@ -1,0 +1,421 @@
+@font-face {
+    font-family: "iconfontnew";
+    font-weight: 400;
+    font-style: normal;
+
+    src: url(../assets/font/iconfont.eot);
+    src: url(../assets/font/iconfont.eot?#iefix) format("embedded-opentype"),
+    url(../assets/font/iconfont.woff) format("woff"),
+    url(../assets/font/iconfont.ttf) format("truetype"),
+    url(../assets/font/iconfont.svg#iconfont) format("svg");
+}
+
+/*这个类名对应筛选的另一套字体，避免重复*/
+.c-icon-new {
+    font-family: "iconfontnew" !important;
+    font-style: normal;
+    font-size: 10px;
+    -webkit-font-smoothing: antialiased;
+}
+.c-icon-new2 {
+    font-family: "iconfontnew" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+}
+.c-pop {
+    height: 480px;
+    overflow: hidden;
+}
+.c-header-round {
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+}
+.c-green-border-btn {
+    border: 1px solid #02b7ca;
+    color: #02b7ca;
+}
+
+.c-line-clamps {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+.c-line-clamps2 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100px;
+    /* line-height: .3rem; */
+    display: inline-block;
+    vertical-align: top;
+    }
+/*
+ * 全局颜色样式
+ * 一般无需单独使用，可用于覆盖默认样式，例如被区块点击包裹的元素清除a链接颜色
+ * @author yangfan
+ */
+
+.c-color {
+    color: #555;
+}
+
+.c-color-blue {
+    color: #38f;
+}
+
+.c-color-white {
+    color: #fff;
+}
+
+.c-color-green {
+    color: #02b7ca;
+}
+
+.c-color-gray-a {
+    color: #666;
+}
+
+.c-color-gray {
+    color: #999;
+}
+
+.c-color-link {
+    color: #000;
+}
+
+.c-color-url {
+    color: #2a9457;
+}
+
+.c-color-red {
+    color: #e43;
+}
+
+.c-color-red:visited {
+    color: #e43;
+}
+
+.c-color-orange {
+    color: #f60;
+}
+
+.c-color-orange:visited {
+    color: #ff6500;
+}
+
+/*筛选组件*/
+
+.sfc-filter-btn {
+    height: .4rem;
+
+}
+.c-icon-bar {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    line-height: 14px;
+    height: 14px;
+    width: 14px;
+    color: #999;
+}
+.sfc-filter {
+    position: fixed;
+    z-index: 91;
+    top: 44px;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: .4rem;
+    background-color: #fff;
+}
+
+.sfc-filter .c-slink-elem {
+    color: #666;
+    position: relative;
+    height: .4rem;
+}
+
+.sfc-filter .c-slink-elem:after {
+    background-color: #e7e7e7;
+}
+
+.sfc-filter .c-slink-elem:first-child::before,
+.sfc-filter .c-slink-elem:last-child::after {
+    background-color: transparent;
+}
+
+.sfc-filter-tag {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+}
+
+.sfc-filter-tag > .c-icon {
+    width: 14px;
+    font-size: 12px;
+}
+
+.sfc-filter-mask {
+    position: fixed;
+    top: .84rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+}
+
+.c-slink-elem .c-line-clamp1 {
+    display: inline;
+}
+
+.sfc-filter-content {
+    overflow-y: scroll;
+    max-height: 100%;
+    padding: 0 .16rem;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+.sfc-filter-l {
+    text-align: left;
+}
+
+.sfc-filter-r {
+    text-align: right;
+}
+
+.sfc-filter-single {
+    padding-right: .17rem;
+    padding-left: .17rem;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.sfc-filter-single:last-of-type {
+    border-bottom: none;
+}
+
+.sfc-filter-single,
+.sfc-filter-s2-nav li,
+.sfc-filter-s2-cont li {
+    padding-top: .05rem;
+    padding-bottom: .05rem;
+}
+
+.sfc-filter-s2-cont li {
+    padding-top: .05rem;
+    padding-bottom: .05rem;
+    /* border-bottom: 1px solid #f1f1f1; */
+}
+
+.sfc-filter-content-s2 {
+    position: relative;
+    /* overflow-y: scroll; */
+    /* height: 100%; */
+    text-align: left;
+    background-color: #fff;
+}
+
+.sfc-filter-content-s2-default {
+    height:         calc(100% - 44px);
+    height: -webkit-calc(100% - 44px);
+}
+
+.sfc-filter-s2-nav,
+.sfc-filter-s2-cont {
+    position: absolute;
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    list-style: none;
+}
+
+.sfc-filter-s2-nav {
+    background-color: #fcfcfc;
+    left: 0;
+}
+
+.sfc-filter-s2-cont {
+    right: 0;
+}
+
+.sfc-filter-s2-nav li {
+    padding-right: .17rem;
+    padding-left: .17rem;
+    border-right: 1px solid #f1f1f1;
+    border-bottom: 1px solid transparent;
+}
+
+.sfc-filter-s2-nav .sfc-filter-s2-label {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    background: #f5f5f5;
+}
+
+.sfc-filter-s2-nav .sfc-filter-s2-label-selected,
+.sfc-filter-s2-item-selected,
+.sfc-filter-single-selected {
+    border-right: 0;
+    color: #333;
+    background-color: #fff;
+}
+
+.sfc-filter-s2-nav .sfc-filter-s2-label-selected,
+.sfc-filter-s2-item-selected,
+.sfc-filter-single-selected .sfc-select-icon {
+    display: block;
+}
+
+.sfc-filter-s2-cont .sfc-filter-s2-label-selected,
+.sfc-filter-s2-item-selected .sfc-select-icon {
+    display: block;
+}
+
+.sfc-filter-s2-cont li {
+    padding-right: .17rem;
+    padding-left: .17rem;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+}
+
+.sfc-filter-m1-label {
+    margin: .06rem auto;
+    line-height: 26px;
+    text-align: left;
+}
+
+.sfc-filter-m1-p:first-of-type {
+    padding-top: .06rem;
+}
+
+.sfc-filter-m1-p:nth-last-of-type(2) {
+    padding-bottom: .06rem;
+}
+
+.sfc-filter-m1-span {
+    margin-right: .06rem;
+    margin-bottom: .06rem;
+    padding: .02rem 0;
+
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+            flex: 1;
+}
+
+.sfc-filter-m1-span:last-of-type {
+    margin-right: 0;
+}
+
+.sfc-filter-m1-item {
+    border: 1px solid #f8f8f8;
+    background-color: #f8f8f8;
+}
+
+.sfc-filter-m1-item-selected {
+    border-color: #38f;
+    color: #38f;
+    background-color: #fff;
+}
+
+.sfc-filter-m1-btn-primary {
+    border-color: #38f;
+    color: #fff;
+    background-color: #38f;
+}
+
+.sfc-filter-m1-btns .sfc-filter-m1-span {
+    margin-right: .12rem;
+    margin-bottom: .12rem;
+}
+
+.sfc-filter-m1-btns .sfc-filter-m1-span:last-of-type {
+    margin-right: 0;
+}
+
+.sfc-filter-m1-btn-fixed {
+    position: fixed;
+    bottom: 3px;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: .12rem .16rem 0;
+    border-top: 1px solid #f1f1f1;
+    background-color: #fff;
+}
+
+.sfc-filter-overflow,
+.sfc-filter-overflow body {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.sfc-filter-showText {
+    position: fixed;
+    top: 82px;
+    left: 0;
+    padding: 0 .1rem;
+    text-align: center;
+}
+
+.sfc-filter .c-slink a:first-child::before,
+.sfc-filter .c-slink .c-slink-elem:first-child::before,
+.sfc-filter .c-slink a::after,
+.c-slink .c-slink-elem::after {
+    width: 0;
+}
+
+.sfc-filter-tag-text {
+    display: inline-block;
+    max-width: 80%;
+}
+
+.sfc-select-icon {
+    display: none;
+    float: right;
+}
+
+/*筛选框右侧箭头样式*/
+.right-arrow-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-right: 14px;
+    text-align: right;
+}
+
+.right-arrow {
+    position: absolute;
+    top: 12px;
+    right: -2px;
+}
+
+.c-black-link {
+    color: #333;
+}
+
+.c-black-link:active {
+    color: #333;
+}
+.c-time {
+    font-style: normal;
+    color: #f60;
+}
+
+.c-head-subscribe-position {
+    position: fixed;
+    z-index: 91;
+    top: 9px;
+    right: 54px;
+}
+
+.c-color-new {
+    color: #333;
+}
+
+.c-color-new .c-icon-bar {
+    color: #666;
+} 
