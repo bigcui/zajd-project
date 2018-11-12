@@ -46,7 +46,7 @@
 
     .carousel-box {
         height: 530px;
-        background: url("../../../assets/image/pic_banner.png") no-repeat center;
+        background: url("../../../assets/image/pic_banner.png") no-repeat center #02114c;
         overflow: hidden;
         .carousel-wrapper{
             width: 1200px;

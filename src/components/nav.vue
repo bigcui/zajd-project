@@ -65,6 +65,7 @@ export default {
     position: relative;
     top: 0;
     width: 100%;
+    max-width: 1440px;
     height: 80px;
     overflow: hidden;
     background: #fff;

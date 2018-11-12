@@ -4,8 +4,12 @@
     <c-news></c-news>
     <c-info></c-info>
     <c-product></c-product>
+    <c-down></c-down>
+    <c-case></c-case>
+    <c-point></c-point>
+    <c-apply></c-apply>
     <!--<c-honor></c-honor>-->
-    <!--<c-footer></c-footer>-->
+    <c-footer></c-footer>
 </section></template>
 
 <script>
@@ -15,7 +19,10 @@ import Cnav from '@/components/nav.vue';
 import cNews from './comps/news.vue';
 import cInfo from './comps/info.vue';
 import cProduct from './comps/product.vue';
-import cHonor from './comps/honor.vue';
+import cDown from './comps/down.vue';
+import cCase from './comps/case.vue';
+import cPoint from './comps/point.vue';
+import cApply from './comps/apply.vue';
 import cFooter from '@/components/footer.vue';
 import hub from '@/common/hub';
 export default {
@@ -25,6 +32,10 @@ export default {
         cNews,
         cInfo,
         cProduct,
+        cDown,
+        cCase,
+        cPoint,
+        cApply,
         cFooter
     },
     data() {

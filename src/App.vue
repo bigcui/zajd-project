@@ -27,7 +27,6 @@ export default {
     }
     #app{
         min-width:1210px;
-        max-width:1440px;
         margin: 0 auto;
     }
 </style>
