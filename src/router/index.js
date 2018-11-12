@@ -18,10 +18,10 @@ export default new Router({
     // base:getAbsolutePath(),
     routes: [{
         path: '/',
-        
+
         component: () => System.import('@/pages/index/index.vue')
     },
-     { 
+     {
        path: '*',
        name:'404',
        component:() => System.import('@/pages/index/index.vue')
@@ -32,7 +32,7 @@ export default new Router({
     },
      {    // 公司介绍
         path: '/introduce',
-        component: () => System.import('@/pages/introduce/index.vue')
+        component: () => System.import('@/pages/aboutUs/index.vue')
     },
     {    // 新闻资讯
         path: '/news',
@@ -58,7 +58,7 @@ export default new Router({
         path: '/caseDetail',
         component: () => System.import('@/pages/caseDetail/index.vue')
     },
-   
+
    ]
 
 });

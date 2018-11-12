@@ -4,9 +4,8 @@
         <c-title :content="scontent">
         </c-title>
         <c-content></c-content>
-        
-       
         <c-footer></c-footer>
+
     </section>
 </template>
 
@@ -24,7 +23,7 @@
             cFooter
         },
         data() {
-            
+
             return {
                 masklock: false,
                 num: 0,
@@ -32,18 +31,18 @@
                     title:'公司介绍',
                     des:'因为专注，所以专业'
                 },
-                
+
             };
         },
         beforeDestroy() {
-            
+
         },
         created() {
-            
+
         },
         mounted() {
-            
-          
+
+
         },
         methods: {
             bd(){
@@ -58,13 +57,13 @@
             },
             removeEvent() {
                 hub.$off('showMask', this.showMask);
-    
+
             },
             showMask(st) {
                 this.masklock = st;
             },
             send() {
-    
+
                 this.$http
                     .post('/hackathon/infer', {
                         id: 111,
