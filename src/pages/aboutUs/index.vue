@@ -1,7 +1,7 @@
 <template>
 
     <section class="about-page">
-        <cnav :ins="1"></cnav>
+        <cnav :ins="5"></cnav>
         <s-title>关于我们</s-title>
         <c-content></c-content>
         <c-footer></c-footer>

@@ -8,29 +8,29 @@
                     首页
                 </p>
             </div>
-            <div class="c-spans" @click="clickfn('introduce',1)" :class="{active:1==ins}">
+            <div class="c-spans" @click="clickfn('corporateBusiness',1)" :class="{active:1==ins}">
                 <p class="p-line">
-                    企业介绍
+                    公司业务
                 </p>
             </div>
-            <div class="c-spans" @click="clickfn('product',2)" :class="{active:2==ins}">
+            <div class="c-spans" @click="clickfn('productInfo',2)" :class="{active:2==ins}">
                 <p class="p-line">
-                    产品服务
+                    产品介绍
                 </p>
             </div>
-            <div class="c-spans" @click="clickfn('case')" :class="{active:3==ins}">
+            <div class="c-spans" @click="clickfn('achievement')" :class="{active:3==ins}">
                 <p class="p-line">
-                    工程案例
+                    国内业绩
                 </p>
             </div>
-            <div class="c-spans" @click="clickfn('contact')" :class="{active:4==ins}">
+            <div class="c-spans" @click="clickfn('news')" :class="{active:4==ins}">
                 <p class="p-line">
-                    联系我们
-                </p>
-            </div>
-             <div class="c-spans" @click="clickfn('news')" :class="{active:5==ins}">
-                <p>
                     新闻资讯
+                </p>
+            </div>
+             <div class="c-spans" @click="clickfn('aboutus')" :class="{active:5==ins}">
+                <p>
+                    关于我们
                 </p>
             </div>
         </div>

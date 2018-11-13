@@ -30,8 +30,8 @@ export default new Router({
         path: '/index',
         component: () => System.import('@/pages/index/index.vue')
     },
-     {    // 公司介绍
-        path: '/introduce',
+     {    // 股阿奴我们
+        path: '/aboutus',
         component: () => System.import('@/pages/aboutUs/index.vue')
     },
     {    // 新闻资讯
@@ -42,21 +42,17 @@ export default new Router({
         path: '/case',
         component: () => System.import('@/pages/case/index.vue')
     },
-    {    // 产品服务
-        path: '/product',
-        component: () => System.import('@/pages/product/index.vue')
+    {    // 国内业绩
+        path: '/achievement',
+        component: () => System.import('@/pages/achievement/index.vue')
     },
-    {    // 联系我们
-        path: '/contact',
-        component: () => System.import('@/pages/contact.vue')
+    {    // 公司业务
+        path: '/corporateBusiness',
+        component: () => System.import('@/pages/corporateBusiness/index.vue')
     },
-    {    // 联系我们
-        path: '/newDetail',
-        component: () => System.import('@/pages/newDetail/index.vue')
-    },
-    {    // 联系我们
-        path: '/caseDetail',
-        component: () => System.import('@/pages/caseDetail/index.vue')
+    {    // 产品介绍
+        path: '/productInfo',
+        component: () => System.import('@/pages/productIntroduce/index.vue')
     },
 
    ]

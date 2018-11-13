@@ -1,8 +1,8 @@
 <template>
 
     <section class="about-page">
-        <cnav :ins="4"></cnav>
-        <s-title>新闻资讯</s-title>
+        <cnav :ins="1"></cnav>
+        <s-title>公司业务</s-title>
         <c-content></c-content>
         <c-footer></c-footer>
     </section>

@@ -97,7 +97,7 @@ export default {
     overflow: auto;
     height: auto;
     min-height: 600px;
-    padding-top: 20px;
+    padding-top: 77px;
 
     .s-content {
         width: 1240px;

@@ -52,7 +52,7 @@
             line-height: 20px;
             margin-top: 20px;
             color: #999999;
-            text-indent: 20px;
+            text-indent: 35px
         }
         .new-img{
             width: 270px;
@@ -65,6 +65,7 @@
         .new-line{
             background: #EEEEEE;
             border-radius: 100px;
+            height: 3px;
             margin-top: 20px;
             margin-bottom: 18px;
         }
