@@ -1,13 +1,13 @@
-    <template>
-        <div class="footer">
+<template>
+    <div class="footer">
         <div class="f-content">
             <div class="contact-part">
-               <div class="inner-contact">
-                   <p>如果您有任何问题或疑问，请随时与我们联系。</p>
-                   <div class="contact-btn"><img src="../assets/image/icon_contact.png" alt=""><span>联系我们</span></div>
+                <div class="inner-contact">
+                    <p>如果您有任何问题或疑问，请随时与我们联系。</p>
+                    <div class="contact-btn"><img src="../assets/image/icon_contact.png" alt=""><span>联系我们</span></div>
 
-               </div>
-                  </div>
+                </div>
+            </div>
             <div class="f-itemlist">
                 <div class="inner-list">
                     <section class="f-item">
@@ -83,49 +83,26 @@
         </div>
         <div class="footer-section max-widt">
             <div class="inner-law">
-                <span>Copyright@{{year}} 北京铸安精电科技有限公司 版权所有</span>
-                <span>京备: 0987656789</span>
+                <span>Copyright@ {{year}} 北京铸安精电科技有限公司 版权所有</span>
+                <span>京ICP备18057198号-1</span>
             </div>
         </div>
-    </div></template>
+    </div>
+</template>
 
-    <script>
-    export default {
+<script>
 
-        props: ['left'],
-        data() {
-            return {
-                year:new Date().getFullYear()
-            };
-        },
-        methods: {
+</script>
 
-            /**
-             * 左上角返回按钮，配置了left的值，则跳转到left，否则返回
-             */
-            searchClick() {
-                alert('go');
-            },
-
-            /**
-             * 右上角按钮，会向父元素触发 rightClick 事件
-             */
-            rightClick() {
-                this.$emit('rightClick');
-            }
-        }
-    };
-    </script>
-
-    <style lang="less" scoped>
-    .footer{
+<style lang="less" scoped>
+    .footer {
         text-align: center;
-         background:#F5F5F5;
+        background: #F5F5F5;
 
-        .contact-part{
+        .contact-part {
             min-width: 1200px;
             background: #1A509D;
-            .inner-contact{
+            .inner-contact {
                 width: 1200px;
                 margin: 0 auto;
             }
@@ -135,60 +112,60 @@
             height: 120px;
 
             color: #FFFFFF;
-            p{
+            p {
                 margin-left: 218px;
                 font-size: 20px;
                 line-height: 120px;
                 text-align: left;
                 float: left;
             }
-            .contact-btn{
+            .contact-btn {
                 float: right;
                 margin-right: 228px;
-                margin-top:30px;
+                margin-top: 30px;
                 width: 300px;
                 height: 56px;
                 line-height: 56px;
                 text-align: center;
                 border: 1px solid #7D9DE0;
-                img{
+                img {
                     vertical-align: middle;
                     margin-right: 10px;
                     width: 24px;
                     display: inline-block;
                     margin-top: -3px;
                 }
-                span{
+                span {
                     font-size: 20px;
                     line-height: 56px;
                 }
             }
         }
-        .f-itemlist{
-            clear:both;
-            height:338px;
-            overflow:hidden;
+        .f-itemlist {
+            clear: both;
+            height: 338px;
+            overflow: hidden;
 
             background: #000131;
-            .inner-list{
+            .inner-list {
                 width: 1200px;
                 margin: 0 auto;
 
             }
 
-            .f-item{
-                float:left;
+            .f-item {
+                float: left;
                 margin-right: 232px;
                 margin-top: 78px;
-                .title-item{
-                    .name{
+                .title-item {
+                    .name {
                         font-family: PingFangSC-Semibold;
                         font-size: 16px;
                         color: #FFFFFF;
                         line-height: 22px;
                         margin-bottom: 16px;
                     }
-                    .title{
+                    .title {
                         font-family: DIN-Regular;
                         font-size: 12px;
                         color: #1A509D;
@@ -196,27 +173,27 @@
                     }
                     margin-bottom: 24px;
                 }
-                li{
+                li {
                     cursor: pointer;
                     font-family: PingFangSC-Regular;
                     font-size: 12px;
                     color: #86868C;
-                    margin-bottom: 15px ;
+                    margin-bottom: 15px;
 
                 }
-                li:before{
+                li:before {
                     content: '-';
                 }
             }
-            .f-item:last-child{
+            .f-item:last-child {
                 margin-right: 0;
             }
         }
-        .footer-section{
+        .footer-section {
             background: #010221;
-            font-size:12px;
-            height:54px;
-            .inner-law{
+            font-size: 12px;
+            height: 54px;
+            .inner-law {
                 width: 1200px;
                 margin: 0 auto;
                 font-family: PingFangSC-Regular;
@@ -225,16 +202,16 @@
                 color: #999999;
 
             }
-            span:first-child{
+            span:first-child {
                 float: left;
                 margin-left: 120px;
 
             }
-            span:last-child{
+            span:last-child {
                 float: right;
                 margin-right: 120px;
             }
 
         }
     }
-    </style>
+</style>

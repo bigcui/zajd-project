@@ -8,10 +8,7 @@
 export default function initInterceptors(interceptors) {
     interceptors
         .request
-        .use(request => {
-            // 参数配置...
-            return request;
-        });
+        .use(request => request);
 
     interceptors
         .response
